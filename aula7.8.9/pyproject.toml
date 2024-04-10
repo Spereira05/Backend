@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "aula7"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "eticgpt/*.py" }
+]
+
+[tool.poetry.scripts]
+bot = "eticgpt.run:bot"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+py-cord = "^2.5.0"
+requests = "^2.31.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+ruff = "^0.3.5"
+black = "^24.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

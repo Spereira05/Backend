@@ -1,0 +1,1 @@
+Um chatgpt da wish

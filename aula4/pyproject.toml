@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "aula4"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "src/README.md"
+packages = [
+    {include = "*.py" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+program = "src.main:name"
+cli = "shop_list:cli" 
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
