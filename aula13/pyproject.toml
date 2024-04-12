@@ -1,21 +1,15 @@
 [tool.poetry]
-name = "api"
+name = "aul13"
 version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [
-    { include = "api/*.py" }
-]
 
 [tool.poetry.dependencies]
 python = "^3.12"
 fastapi = "^0.110.1"
-uvicorn = "^0.29.0"
 
-[tool.poetry.scripts]
-api = "api.main"
 
 [build-system]
 requires = ["poetry-core"]
